@@ -31,6 +31,7 @@ export const History = ({ user }) => {
   };
 
   const onDeleteHandler = async (historyID) => {
+    // eslint-disable-next-line no-unused-vars
     const res = await axios.delete(
       `http://localhost:5000/history/${historyID}`
     );
